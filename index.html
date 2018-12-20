@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jednoręki bandyta</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="wrap">
+      <h1>Jednoręki bandyta</h1>
+
+      <section class="game">
+        <div class="color one"></div>
+        <div class="color two"></div>
+        <div class="color three"></div>
+      </section>
+
+      <section class="play">
+        <input type="number" placeholder="Podaj stawkę" id="bid" />
+        <button id="start">Zakręć!</button>
+      </section>
+
+      <section class="panel">
+        Aktualnie w portfelu: <span class="wallet"></span>
+      </section>
+
+      <section class="score">
+        <span class="result"></span> <br /><br />Liczba gier:
+        <span class="number"></span> , w tym: <br />
+        <span class="win"></span> wygrane i <span class="loss"></span> przegrane
+      </section>
+    </div>
+
+    <script src="Statistics.js"></script>
+    <script src="Wallet.js"></script>
+    <script src="Draw.js"></script>
+    <script src="Result.js"></script>
+    <script src="Game.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

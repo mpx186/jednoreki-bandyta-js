@@ -1,0 +1,333 @@
+/*  BGimage
+========================================================
+This pattern is downloaded from www.subtlepatterns.com If you need more,
+that's where to get'em.
+========================================================
+ */
+
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(img/wallpaper2you_329686.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 10px;
+  color: #fff;
+  overflow: hidden;
+}
+
+.wrap {
+  width: 95%;
+  margin: 3vh auto;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 6vh auto;
+  font-size: 1.5rem;
+  opacity: 0.9;
+  text-shadow: 3px 2px 10px rgba(66, 160, 173, 1);
+}
+
+.game {
+  display: flex;
+  margin-bottom: 5vh;
+}
+
+.game div {
+  height: 25vh;
+  flex-grow: 1;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgb(37, 69, 73);
+}
+
+.game div.one {
+  transition: 0.3s;
+}
+
+.game div.two {
+  transition: 0.6s;
+}
+
+.game div.three {
+  transition: 0.9s;
+}
+
+.play {
+  text-align: center;
+}
+
+.play input {
+  height: 9vh;
+  font-size: 1rem;
+  padding: 3%;
+  width: 95%;
+  margin-bottom: 3vh;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px rgb(37, 69, 73);
+}
+
+.play button {
+  display: block;
+  width: 65%;
+  height: 8vh;
+  text-align: center;
+  padding: 4%;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  background-color: rgb(21, 68, 80);
+  border: 1px solid rgba(125, 240, 255, 0.8);
+  border-radius: 5px;
+  color: white;
+  box-shadow: 2px 2px 10px rgb(37, 69, 73);
+  letter-spacing: 4px;
+  outline: none;
+  margin: 10px auto;
+  transition: 0.3s;
+}
+
+.play button:hover {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  color: black;
+}
+
+.panel {
+  margin: 4vh 0 2vh;
+}
+
+.panel,
+.score {
+  text-align: center;
+  font-size: 15px;
+}
+
+.panel span,
+.score span {
+  font-weight: bold;
+}
+
+section.score span.result {
+  color: #fff;
+  font-size: 25px;
+}
+
+@media (orientation: portrait) and (min-width: 375px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .play input {
+    font-size: 1.4rem;
+  }
+
+  .play button {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .panel,
+  .score {
+    font-size: 20px;
+  }
+
+  section.score span.result {
+    font-size: 30px;
+  }
+}
+
+@media (orientation: portrait) and (min-width: 768px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .play input {
+    font-size: 2rem;
+  }
+
+  .play button {
+    line-height: 2vh;
+    font-size: 2rem;
+  }
+
+  .panel,
+  .score {
+    font-size: 25px;
+  }
+
+  section.score span.result {
+    font-size: 40px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 533px) {
+  h1 {
+    margin: 2vh auto;
+    font-size: 1rem;
+  }
+
+  .game {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3vh;
+  }
+
+  .play input {
+    font-size: 0.8rem;
+    width: 40%;
+    margin-bottom: 1.5vh;
+  }
+
+  .play button {
+    width: 50%;
+    height: 10vh;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 0.8rem;
+  }
+
+  .panel {
+    margin: 2vh 0 1vh;
+  }
+
+  .panel,
+  .score {
+    font-size: 10px;
+  }
+
+  section.score span.result {
+    font-size: 20px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 736px) {
+  h1 {
+    margin: 4vh auto;
+    font-size: 1.5rem;
+  }
+
+  .game {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+
+  .play input {
+    font-size: 1rem;
+  }
+
+  .play button {
+    width: 30%;
+    height: 9vh;
+
+    padding-top: 12px;
+    font-size: 1rem;
+  }
+
+  .panel {
+    margin: 3vh 0 1vh;
+  }
+
+  .panel,
+  .score {
+    font-size: 12px;
+  }
+
+  section.score span.result {
+    font-size: 25px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  h1 {
+    margin: 5vh auto;
+    font-size: 3rem;
+  }
+
+  .play input {
+    font-size: 1.8rem;
+  }
+
+  .play button {
+    width: 25%;
+    height: 6vh;
+    margin: 25px auto;
+    padding-top: 15px;
+    font-size: 1.3rem;
+  }
+
+  .panel {
+    margin: 5vh 0 2vh;
+  }
+
+  .panel,
+  .score {
+    font-size: 20px;
+  }
+
+  section.score span.result {
+    font-size: 35px;
+  }
+}
+
+@media (orientation: landscape) and (min-width: 1366px) {
+  body {
+    overflow-y: auto;
+  }
+
+  h1 {
+    margin: 3.5vh auto;
+    font-size: 2.5rem;
+  }
+  .game {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5vh;
+  }
+
+  .game div {
+    margin: 10px;
+  }
+  .play input {
+    padding: 10px;
+    font-size: 1.3rem;
+    height: 50px;
+    width: 30%;
+  }
+
+  .play button {
+    width: 25%;
+    height: 50px;
+    margin: 25px auto;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .panel {
+    margin: 2vh 0 2vh;
+  }
+
+  .panel,
+  .score {
+    font-size: 20px;
+  }
+
+  section.score span.result {
+    font-size: 30px;
+  }
+}
